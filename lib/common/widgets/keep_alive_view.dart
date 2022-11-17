@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class KeepAliveView extends StatefulWidget {
   final Widget child;
 
-  KeepAliveView(this.child);
+  const KeepAliveView(this.child);
 
   @override
   State<KeepAliveView> createState() => _KeepAliveViewState();

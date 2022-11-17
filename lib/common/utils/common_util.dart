@@ -5,11 +5,11 @@ import 'object_util.dart';
 
 class CommonUtils {
   static String getImageByName(String imageName) {
-    return 'assets/images/$imageName';
+    return 'assets/images/$imageName.webp';
   }
 
   static String getIconByName(String iconName) {
-    return 'assets/icons/$iconName';
+    return 'assets/icons/$iconName.webp';
   }
 
   //转为rpx
