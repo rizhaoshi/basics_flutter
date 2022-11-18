@@ -11,6 +11,7 @@ import '../../../common/utils/common_util.dart';
 import '../../../common/utils/dialog_util.dart';
 import '../../../common/widgets/permission_request_page.dart';
 import '../../routes/navigation_utils.dart';
+import 'first_guild_page.dart';
 import 'splash_controller.dart';
 import 'welcome_page.dart';
 
@@ -141,8 +142,13 @@ class _SplashPageState extends State<SplashPage> with WidgetsBindingObserver {
     );
   }
 
-  void _next() {
-    NavigatorUtils.pushPageByFade(context: context, targetPage: WelcomePage(), isReplace: true);
+  void _next() async{
+    bool? isFirstInstall = await StorageUtil.instance.getBool(StorageConstant.IS_FIRST);
+    if(isFirstInstall==null){
+      NavigatorUtils.pushPageByFade(context: context, targetPage: FirstGuildPage(), isReplace: true);
+    }else{
+      NavigatorUtils.pushPageByFade(context: context, targetPage: WelcomePage(), isReplace: true);
+    }
   }
 
   @override

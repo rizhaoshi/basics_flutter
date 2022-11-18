@@ -54,7 +54,7 @@ final ThemeData theme = ThemeData(
   ),
 
   appBarTheme: const AppBarTheme(
-    backgroundColor: Colors.white,
+    backgroundColor: AppColors.primary,
     elevation: 0,
   ),
 

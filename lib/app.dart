@@ -6,7 +6,7 @@ import 'common/config/app_thumb.dart';
 
 Widget createApp() {
   return GetMaterialApp(
-    initialRoute: Routes.SPLASH,
+    initialRoute: Routes.MAIN,
     getPages: AppPages.routes,
     debugShowCheckedModeBanner: false,
     theme: theme,

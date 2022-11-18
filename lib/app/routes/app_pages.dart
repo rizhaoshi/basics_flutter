@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/home/home_binding.dart';
+import '../modules/home/home_page.dart';
 import '../modules/main/main_binding.dart';
 import '../modules/main/main_page.dart';
 import '../modules/splash/splash_binding.dart';
@@ -21,6 +23,11 @@ class AppPages {
       name: Routes.SPLASH,
       page: () => const SplashPage(),
       binding: SplashBinding(),
+    ),
+    GetPage(
+      name: Routes.HOME,
+      page: () => const HomePage(),
+      binding: HomeBinding(),
     ),
   ];
 }
