@@ -4,10 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../common/widgets/keep_alive_view.dart';
+import '../mine/mine_page.dart';
 
 class MainController extends GetxController {
-  int currentIndex = 0;
-  var pageController = PageController(initialPage: 0);
+  int currentIndex = 2;
+  var pageController = PageController(initialPage: 2);
   late List<Widget> pageViews;
   final Map<String, String> bottomNames = {
     'home': "首页",
@@ -21,7 +22,7 @@ class MainController extends GetxController {
     pageViews = [
       KeepAliveView(HomePage()),
       KeepAliveView(Container(color: Colors.yellow)),
-      KeepAliveView(Container(color: Colors.redAccent)),
+      KeepAliveView(MinePage()),
     ];
   }
 

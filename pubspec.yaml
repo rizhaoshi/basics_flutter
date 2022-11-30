@@ -35,12 +35,18 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   get: ^4.6.5
+  dio: ^4.0.6
   logger: ^1.1.0
+  crypto: ^3.0.2
+  event_bus: ^2.0.0
   video_player: ^2.4.7
   path_provider: ^2.0.11
   mmkv_flutter: ^1.0.10
   webview_flutter: ^3.0.4
+  install_plugin_custom: ^1.0.0
   permission_handler: ^10.2.0
+  shake_animation_widget: ^3.0.3
+  package_info_plus: ^3.0.2
 
 dev_dependencies:
   flutter_test:

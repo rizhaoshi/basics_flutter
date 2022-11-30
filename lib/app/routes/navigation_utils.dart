@@ -48,6 +48,7 @@ class NavigatorUtils {
   static void pushPageByFade({
     required BuildContext context,
     required Widget targetPage,
+    int starMills = 400,
     bool isReplace = false,
     bool isOpaque = false,
     Function(dynamic value)? dismissCallBack,
@@ -57,6 +58,7 @@ class NavigatorUtils {
         pageBuilder: (BuildContext cxt, Animation<double> animation, Animation<double> secondaryAnimation) {
           return targetPage;
         },
+        transitionDuration: Duration(milliseconds: starMills),
         transitionsBuilder: (BuildContext context, Animation<double> animation, Animation<double> secondaryAnimation, Widget child) {
           return FadeTransition(opacity: animation, child: child);
         });

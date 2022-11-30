@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../common/utils/object_util.dart';
 import '../../../common/widgets/web_view_page.dart';
-import '../../widgets/common_app_bar.dart';
+import '../../../common/widgets/common_app_bar.dart';
 
 class DetailsWebPage extends StatelessWidget {
   final String webUrl;

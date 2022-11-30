@@ -13,4 +13,6 @@ abstract class Routes {
 
   //我的
   static const MINE = "/mine";
+  static const LOGIN = '/login';
+  static const SETTINGS = '/mine/settings';
 }

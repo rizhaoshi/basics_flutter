@@ -142,13 +142,14 @@ class _SplashPageState extends State<SplashPage> with WidgetsBindingObserver {
     );
   }
 
-  void _next() async{
-    bool? isFirstInstall = await StorageUtil.instance.getBool(StorageConstant.IS_FIRST);
-    if(isFirstInstall==null){
-      NavigatorUtils.pushPageByFade(context: context, targetPage: FirstGuildPage(), isReplace: true);
-    }else{
-      NavigatorUtils.pushPageByFade(context: context, targetPage: WelcomePage(), isReplace: true);
-    }
+  void _next() async {
+    StorageUtil.instance.getBool(StorageConstant.IS_FIRST).then((value) {
+      if (value == null||!value) {
+        NavigatorUtils.pushPageByFade(context: context, targetPage: FirstGuildPage(), isReplace: true);
+      } else {
+        NavigatorUtils.pushPageByFade(context: context, targetPage: WelcomePage(), isReplace: true);
+      }
+    });
   }
 
   @override
