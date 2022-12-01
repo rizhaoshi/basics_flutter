@@ -4,6 +4,7 @@ import '../home/home_controller.dart';
 import '../login/login_controller.dart';
 import '../mine/mine_controller.dart';
 import '../mine/settings/settings_controller.dart';
+import '../tool/tool_controller.dart';
 import 'main_controller.dart';
 
 class MainBinding extends Bindings {
@@ -23,6 +24,9 @@ class MainBinding extends Bindings {
     );
     Get.lazyPut<SettingsController>(
           () => SettingsController(),
+    );
+    Get.lazyPut<ToolController>(
+          () => ToolController(),
     );
   }
 }

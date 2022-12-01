@@ -43,6 +43,7 @@ dependencies:
   path_provider: ^2.0.11
   mmkv_flutter: ^1.0.10
   webview_flutter: ^3.0.4
+  flutter_easyrefresh: ^2.2.2
   install_plugin_custom: ^1.0.0
   permission_handler: ^10.2.0
   shake_animation_widget: ^3.0.3

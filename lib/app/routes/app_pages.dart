@@ -12,6 +12,8 @@ import '../modules/mine/settings/settings_binding.dart';
 import '../modules/mine/settings/settings_page.dart';
 import '../modules/splash/splash_binding.dart';
 import '../modules/splash/splash_page.dart';
+import '../modules/tool/tool_binding.dart';
+import '../modules/tool/tool_page.dart';
 import 'app_routes.dart';
 
 class AppPages {
@@ -49,6 +51,11 @@ class AppPages {
       name: Routes.SETTINGS,
       page: () => const SettingsPage(),
       binding: SettingsBinding(),
+    ),
+    GetPage(
+      name: Routes.TOOL,
+      page: () => const ToolPage(),
+      binding: ToolBinding(),
     ),
   ];
 }

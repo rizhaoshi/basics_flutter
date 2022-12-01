@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 
 import '../../../common/widgets/keep_alive_view.dart';
 import '../mine/mine_page.dart';
+import '../tool/tool_page.dart';
 
 class MainController extends GetxController {
   int currentIndex = 2;
@@ -21,7 +22,7 @@ class MainController extends GetxController {
     super.onInit();
     pageViews = [
       KeepAliveView(HomePage()),
-      KeepAliveView(Container(color: Colors.yellow)),
+      KeepAliveView(ToolPage()),
       KeepAliveView(MinePage()),
     ];
   }
