@@ -1,9 +1,9 @@
-import 'package:basics_flutter/app/modules/home/home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../common/widgets/keep_alive_view.dart';
+import '../home/home_page.dart';
 import '../mine/mine_page.dart';
 import '../tool/tool_page.dart';
 

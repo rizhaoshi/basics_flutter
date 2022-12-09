@@ -1,10 +1,10 @@
-import 'package:basics_flutter/app/modules/main/main_page.dart';
-import 'package:basics_flutter/common/utils/common_util.dart';
 import 'package:flutter/material.dart';
 
 import '../../../common/storage/storage_constant.dart';
 import '../../../common/storage/storage_util.dart';
+import '../../../common/utils/common_util.dart';
 import '../../routes/navigation_utils.dart';
+import '../main/main_page.dart';
 
 class FirstGuildPage extends StatefulWidget {
   const FirstGuildPage({Key? key}) : super(key: key);

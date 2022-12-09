@@ -1,7 +1,7 @@
-import 'package:basics_flutter/common/utils/toast_util.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../common/utils/common_util.dart';
+import '../../../common/utils/toast_util.dart';
 import '../../widgets/bubbles_background.dart';
 import '../../widgets/text_field_view.dart';
 import 'login_controller.dart';

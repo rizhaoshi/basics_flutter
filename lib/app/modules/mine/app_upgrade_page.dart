@@ -1,12 +1,12 @@
 import 'dart:async';
-import 'package:basics_flutter/common/config/app_colors.dart';
-import 'package:basics_flutter/common/utils/log_util.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:install_plugin_custom/install_plugin_custom.dart';
 import 'package:package_info_plus/package_info_plus.dart';
+import '../../../common/config/app_colors.dart';
 import '../../../common/utils/common_util.dart';
+import '../../../common/utils/log_util.dart';
 
 class AppUpgradePage extends StatefulWidget {
   bool isForce;
